@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Career Connect
+
+Career Connect is a full-stack job board that allows employers to submit job opportunities and helps candidates search for relevant positions.
+
+## Features
+
+* Search jobs by keyword
+* Filter by job type, location, and remote availability
+* View detailed job descriptions
+* Submit new job postings
+* Upload company logos
+* Validate submitted information
+* Review and approve postings through an admin dashboard
+* Apply using an email address or external application link
+* Responsive design for desktop and mobile devices
+
+## Technologies
+
+* Next.js
+* React
+* TypeScript
+* Tailwind CSS
+* PostgreSQL
+* Prisma ORM
+* Clerk Authentication
+* Zod validation
+* Vercel Blob
 
 ## Getting Started
 
-First, run the development server:
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/hassanraza-us/career-connect.git
+cd career-connect
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure environment variables
+
+Create a `.env.local` file and add your database, Clerk, and Vercel Blob credentials.
+
+Never commit `.env.local` or private credentials to GitHub.
+
+### 4. Prepare the database
+
+```bash
+npx prisma generate
+npx prisma db push
+```
+
+### 5. Start the application
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Future Improvements
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* Candidate and employer accounts
+* Saved jobs
+* Application tracking
+* Email notifications
+* Automated testing
+* Improved accessibility
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Hassan Raza
+MS Computer Science Student at the University at Albany, SUNY
+[LinkedIn](https://www.linkedin.com/in/hassanrazaus/)
